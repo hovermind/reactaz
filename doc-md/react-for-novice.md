@@ -43,4 +43,9 @@ class MyComponent extends React.Component {
 }
 ```
 
-## Function component
+## Functional component
+```jsx
+const myComponent = (props) => {
+  return <p>Hello {props.name}! Today is {new Date()}.</p>
+}
+```
