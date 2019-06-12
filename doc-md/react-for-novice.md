@@ -1,4 +1,12 @@
 ## About react
+The five key concepts are:
+* Components
+* JSX
+* Props & State
+* The Component API
+* Component Types
+
+Things to know:
 * A React codebase is made up of components.
 * These components are written using JSX.
 * Data flows from parent to children, except when it comes to state, which originates inside a component.
@@ -7,6 +15,9 @@
 * You should keep data logic and UI logic in separate components.
 * Higher-order components are a common pattern for giving a component access to new tools.
 
+Courtesy: [Master these five concepts, then master React](https://www.freecodecamp.org/news/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3/)
+
+## Class component
 ```jsx
 class MyComponent extends React.Component {
 
@@ -31,3 +42,5 @@ class MyComponent extends React.Component {
   
 }
 ```
+
+## Function component
