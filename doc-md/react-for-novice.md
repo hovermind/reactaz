@@ -1,9 +1,9 @@
 ## About ReactJS
 #### Key concepts:
-* **Components** : functional component & class component, higher-order component (container, data logic) & presentational component (UI logic, dumb)
+* **Components** : *functional component & class component. higher-order component (container, data logic) & presentational component (UI logic)*
 * **JSX** : *mix of html markup and JavaScript in curly braces*
 * **Props & State** : *state changes (i.e. user input), props don't (i.e. attribute)*
-* The Component API
+* **The Component API**
 
 #### Things to know:
 * A React codebase is made up of components and these components are written using JSX
