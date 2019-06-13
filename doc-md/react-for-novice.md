@@ -37,7 +37,11 @@ export default MyComponent;
 
 Using component
 ```jsx
-<MyComponent name="Hassan" />
+<div id="container">
+    <!-- This element's contents will be replaced with your component. -->
+</div>
+
+ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('content'));
 ```
 
 
