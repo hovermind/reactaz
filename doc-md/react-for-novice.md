@@ -1,7 +1,7 @@
 ## About ReactJS
 **Key concepts:**
 * Components : *functional component and class component*
-* JSX : *html markup + JavaScript*
+* JSX : *mix of html & JavaScript in curly braces*
 * Props & State : *State changes (i.e. user input), Props don't (i.e. attribute)*
 * The Component API
 * Higher-order (container) component : *contains data logic. whole purpose is to get data and contain sub-components*
@@ -32,8 +32,10 @@ class MyComponent extends React.Component {
 
 ## Functional Component
 * a function which accepts props and returns a React element
-* easier to read and test because they are plain JavaScript functions
-* a performance boost
+* easier to read and test (plain JavaScript functions)
+* performance (faster than class component)
+* has to return JSX (a single tag/container)
+* the whole fucntion acts like return() function of class component
 
 ```jsx
 import React from 'react';
