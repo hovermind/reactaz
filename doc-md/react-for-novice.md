@@ -1,10 +1,6 @@
 ## About ReactJS
 #### Key concepts:
-* **Components** : 
-  * functional component : *js fucntion*
-  * class component : *ES6 class syntax*
-  * higher-order (container) component : *contains data logic. whole purpose is to get data and contain sub-components*
-  * presentational component : *contains UI logic. whole purpose is to show data (dumb)*
+* **Components** : functional component & class component, higher-order component (container, data logic) & presentational component (UI logic, dumb)
 * **JSX** : *mix of html markup and JavaScript in curly braces*
 * **Props & State** : *state changes (i.e. user input), props don't (i.e. attribute)*
 * The Component API
