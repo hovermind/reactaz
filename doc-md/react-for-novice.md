@@ -49,4 +49,6 @@ const myComponent = (props) => {
   let greeting = `Hello { props.name }!`; // interplated string
   return <p> { greeting } </p>
 }
+
+export default myComponent;
 ```
