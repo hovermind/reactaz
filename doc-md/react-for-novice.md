@@ -20,19 +20,26 @@ Courtesy: [Master these five concepts, then master React](https://www.freecodeca
 
 ## Class Component
 ```jsx
-class MyComponent extends React.Component {
+import React, { Component } from 'react';
 
-  // ... ... ...
-
+class MyComponent extends Component {
+  // ... ... ..
+  
   render() {
     return (
-      <h1>
-        Hello World! Today is: { new Date() }
-      </h1>;
-    )
+      <h1> Hello { props.name }! Today is: { new Date() } </h1>
+    );
   }
 }
+
+export default MyComponent;
 ```
+
+Using component
+```jsx
+<MyComponent name="Hassan" />
+```
+
 
 ## Functional Component
 * a function which accepts props and returns a React element
