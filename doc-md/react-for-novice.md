@@ -19,6 +19,10 @@
 Courtesy: [Master these five concepts, then master React](https://www.freecodecamp.org/news/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3/)
 
 ## Class Component
+* a class that extends Component and has a render function
+* ES6 class syntax
+* property is accessed with: `this.props`
+
 ```jsx
 import React, { Component } from 'react';
 
@@ -27,7 +31,7 @@ class MyComponent extends Component {
   
   render() {
     return (
-      <h1> Hello { props.name }! Today is: { new Date() } </h1>
+      <h1> Hello { this.props.name }! Today is: { new Date() } </h1>
     );
   }
 }
@@ -38,7 +42,6 @@ export default MyComponent;
 Using component
 ```jsx
 <div id="container">
-    <!-- This element's contents will be replaced with your component. -->
 </div>
 
 ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('content'));
