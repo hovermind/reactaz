@@ -66,7 +66,7 @@ export default MyOtherComponent;
 
 ## State of Class Component
 * set: `this.setState({stateName : stateVal})` or `this.setState(updater [, callback])`
-* get: `this.state` (avoid it since `this.setState()` is async)
+* get: `this.state`
 
 **Passing object:** performs a shallow merge of the state change into the new state
 ```jsx
@@ -82,6 +82,7 @@ this.setState((prevState, props) => {
   return {counter: prevState.counter + props.step};
 });
 ```
+**Note:** *Due to the async nature of `setState()`, it is not advisable to use `this.state` to get the previous state within `setState()`, use `prevState` to get previous state*
 
 ## Functional Component
 * a function which accepts props and returns a React element
