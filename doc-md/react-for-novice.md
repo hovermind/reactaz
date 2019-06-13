@@ -25,7 +25,7 @@ import React from 'react';
 
 class MyComponent extends React.Component {
   // ... ... ..
-  // or ES6 destructing : const {name} = this.props;
+  // ES6 destructing : const {name} = this.props;
   render() {
     return (
       <h1> Hello {this.props.name}! </h1>  // <h1> Hello {name}! </h1>
