@@ -44,7 +44,7 @@ const myComponent(props) {
 
 // ES6 arrow function
 const myComponent = (props) => {
-  let greeting = `Hello { props.name }! Today is { new Date() }.`; // interplated string
+  let greeting = `Hello { props.name }!`; // interplated string
   return <p> { greeting } </p>
 }
 ```
