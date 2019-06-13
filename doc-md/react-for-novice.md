@@ -15,15 +15,14 @@
 Courtesy: [Master these five concepts, then master React](https://www.freecodecamp.org/news/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3/)
 
 ## Class Component
-* a class that extends Component and has a render function
+* a class that extends `React.Component` and has a render function
 * ES6 class syntax
 * property is accessed with: `this.props`
 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 
-class MyComponent extends Component {
-
+class MyComponent extends React.Component {
   // ... ... ..
   // this.props.name => Hello {this.props.name}!
   // or ES6 destructing : const {name} = this.props; => Hello {name}!
