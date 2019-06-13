@@ -36,7 +36,15 @@ class MyComponent extends React.Component {
 * a performance boost
 
 ```jsx
+import React from 'react';
+
+const myComponent(props) {
+  return <p> Hello { props.name }! Today is { new Date() }. </p>
+}
+
+// ES6 arrow function
 const myComponent = (props) => {
-  return <p> Hello {props.name}! Today is { new Date() }. </p>
+  let greeting = `Hello { props.name }! Today is { new Date() }.`; // interplated string
+  return <p> { greeting } </p>
 }
 ```
