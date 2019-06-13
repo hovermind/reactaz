@@ -41,13 +41,26 @@ class MyComponent extends React.Component {
 import React from 'react';
 
 const myComponent(props) {
-  return <p> Hello { props.name }! Today is { new Date() }. </p>
+  return (
+    <h1> 
+      Hello { props.name }!
+    </h1>
+  )
 }
 
 // ES6 arrow function
 const myComponent = (props) => {
   let greeting = `Hello { props.name }!`; // interplated string
-  return <p> { greeting } </p>
+  return (
+    <h1> { greeting } </h1>
+  )
+}
+
+// ES6 destructing
+const myComponent = ({name}) => {
+  return (
+    <h1> Hello { name }! </h1>
+  )
 }
 
 export default myComponent;
