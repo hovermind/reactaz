@@ -18,18 +18,16 @@ Courtesy: [Master these five concepts, then master React](https://www.freecodeca
 * a class that extends `React.Component` and has a render function
 * ES6 class syntax
 * property is accessed with: `this.props`
+* destructing props: `const {foo} = this.props;`
 
 ```jsx
 import React from 'react';
 
 class MyComponent extends React.Component {
   // ... ... ..
-  // this.props.name => Hello {this.props.name}!
-  // or ES6 destructing : const {name} = this.props; => Hello {name}!
-  
   render() {
     return (
-      <h1> Hello {this.props.name}! Today is: {new Date()} </h1>
+      <h1> Hello {this.props.name}! </h1> // or ES6 destructing : const {name} = this.props; => <h1> Hello {name}! </h1>
     );
   }
 }
