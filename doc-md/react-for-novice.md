@@ -1,5 +1,5 @@
 ## About ReactJS
-Key concepts:
+**Key concepts:**
 * Components : *functional component and class component*
 * JSX : *html markup + JavaScript*
 * Props & State : *State changes (i.e. user input), Props don't (i.e. attribute)*
@@ -18,35 +18,25 @@ Key concepts:
 
 Courtesy: [Master these five concepts, then master React](https://www.freecodecamp.org/news/the-5-things-you-need-to-know-to-understand-react-a1dbd5d114a3/)
 
-## Class component
+## Class Component
 ```jsx
 class MyComponent extends React.Component {
 
   // ... ... ...
 
   render() {
-    return <p> Hello World! <p>;
+    return <p> Hello World! Today is: { new Date() } <p>;
   }
-  
 }
 ```
 
-Mix of js and markup: `{ ... }`
-```jsx
-class MyComponent extends React.Component {
+## Functional Component
+* a function which accepts props and returns a React element
+* easier to read and test because they are plain JavaScript functions
+* a performance boost
 
-  // ... ... ...
-
-  render() {
-    return <p> Today is: { new Date() } </p>;
-  }
-  
-}
-```
-
-## Functional component
 ```jsx
 const myComponent = (props) => {
-  return <p>Hello {props.name}! Today is {new Date()}.</p>
+  return <p> Hello {props.name}! Today is { new Date() }. </p>
 }
 ```
