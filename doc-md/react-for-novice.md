@@ -29,9 +29,9 @@ import React, { Component } from 'react';
 class MyComponent extends Component {
 
   // ... ... ..
-  
-  // this.props.name 
+  // this.props.name => Hello {this.props.name}!
   // or ES6 destructing : const {name} = this.props; => Hello {name}!
+  
   render() {
     return (
       <h1> Hello {this.props.name}! Today is: {new Date()} </h1>
