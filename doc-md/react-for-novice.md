@@ -36,7 +36,7 @@ class MyComponent extends React.Component {
 export default MyComponent;
 ```
 
-Using component
+Using class component
 ```jsx
 <div id="container">
 </div>
@@ -44,7 +44,7 @@ Using component
 ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('content'));
 ```
 
-Using my component in other component: 
+Using class component in other component: 
 ```jsx
 import React, { Component } from 'react';
 import MyComponent from './MyComponent';
@@ -62,6 +62,25 @@ class MyOtherComponent extends Component {
 }
 
 export default MyOtherComponent;
+```
+
+## State of Class Component
+* set: `this.setState({stateName : stateVal})` or `this.setState(updater [, callback])`
+* get: `this.state` (avoid it since `this.setState()` is async)
+
+**Passing object:** performs a shallow merge of the state change into the new state
+```jsx
+this.setState({foo: 2});
+```
+
+**Passing updater and callback function:** 
+```jsx
+// updater function signature: (prevState, props) => stateChange
+// componentDidUpdate lifecycle callback should be used instead of optional callback of setState (most cases)
+
+this.setState((prevState, props) => {
+  return {counter: prevState.counter + props.step};
+});
 ```
 
 ## Functional Component
