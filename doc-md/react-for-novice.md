@@ -46,7 +46,25 @@ Using component
 
 ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('content'));
 ```
+Using my component in other component: 
+```jsx
+import React, { Component } from 'react';
+import MyComponent from './MyComponent';
 
+class MyOtherComponent extends Component {
+
+  render() {
+    return (
+      <div>
+        <div>This is my other component.</div>
+        <MyComponent name="ハッサン" />
+      </div>
+    );
+  }
+}
+
+export default MyOtherComponent;
+```
 
 ## Functional Component
 * a function which accepts props and returns a React element
