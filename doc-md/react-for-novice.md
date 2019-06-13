@@ -1,12 +1,11 @@
-## About react
+## About ReactJS
 The five key concepts are:
-* Components
-* JSX
-* Props & State
+* Components : *functional component and class component*
+* JSX : *html markup + JavaScript*
+* Props & State : *State changes (i.e. user input), Props don't (i.e. attribute)*
 * The Component API
-* Component Types
 
-Things to know:
+**Things to know:**
 * A React codebase is made up of components.
 * These components are written using JSX.
 * Data flows from parent to children, except when it comes to state, which originates inside a component.
