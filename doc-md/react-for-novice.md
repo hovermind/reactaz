@@ -25,7 +25,11 @@ class MyComponent extends React.Component {
   // ... ... ...
 
   render() {
-    return <p> Hello World! Today is: { new Date() } <p>;
+    return (
+      <h1>
+        Hello World! Today is: { new Date() }
+      </h1>;
+    )
   }
 }
 ```
