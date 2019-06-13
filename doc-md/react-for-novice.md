@@ -1,5 +1,5 @@
 ## About ReactJS
-**Key concepts:**
+#### Key concepts:
 * **Components** : 
   * functional component: js fucntion
   * class component: ES6 class syntax
@@ -9,12 +9,10 @@
 * **Props & State** : state changes (i.e. user input), props don't (i.e. attribute)
 * The Component API
 
-**Things to know:**
-* A React codebase is made up of components
-* These components are written using JSX
+#### Things to know:
+* A React codebase is made up of components and these components are written using JSX
 * Data flows from parent to children, except when it comes to state, which originates inside a component
 * Components possess a small set of lifecycle and utility methods
-* Components can also be written as pure functions
 * You should keep data logic and UI logic in separate components
 * Higher-order components are a common pattern for giving a component access to new tools
 
