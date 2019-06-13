@@ -67,6 +67,7 @@ export default MyOtherComponent;
 ## State of Class Component
 * set: `this.setState({stateName : stateVal})` or `this.setState(updater [, callback])`
 * get: `this.state`
+* normally `setState()` will be called from event handler function or lifecycle callbacks
 
 **Passing object:** performs a shallow merge of the state change into the new state
 ```jsx
