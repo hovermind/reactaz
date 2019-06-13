@@ -27,11 +27,14 @@ Courtesy: [Master these five concepts, then master React](https://www.freecodeca
 import React, { Component } from 'react';
 
 class MyComponent extends Component {
+
   // ... ... ..
   
+  // this.props.name 
+  // or ES6 destructing : const {name} = this.props; => Hello {name}!
   render() {
     return (
-      <h1> Hello { this.props.name }! Today is: { new Date() } </h1>
+      <h1> Hello {this.props.name}! Today is: {new Date()} </h1>
     );
   }
 }
@@ -46,6 +49,7 @@ Using component
 
 ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('content'));
 ```
+
 Using my component in other component: 
 ```jsx
 import React, { Component } from 'react';
