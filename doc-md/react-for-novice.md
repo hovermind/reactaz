@@ -19,6 +19,7 @@ Courtesy: [Master these five concepts, then master React](https://www.freecodeca
 * ES6 class syntax
 * property is accessed with: `this.props`
 * destructing props: `const {foo} = this.props;`
+* compiling & running react app on the fly : https://plnkr.co/2bE5GEUgzjDEeociZyxM
 
 ```jsx
 import React from 'react';
