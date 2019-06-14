@@ -21,6 +21,7 @@ Courtesy: [Master these five concepts, then master React](https://www.freecodeca
 * destructing props: `const {foo} = this.props;`
 * compiling & running react app on the fly : https://plnkr.co/2bE5GEUgzjDEeociZyxM
 
+`MyComponent.js`
 ```jsx
 import React from 'react';
 
@@ -36,16 +37,28 @@ class MyComponent extends React.Component {
 export default MyComponent;
 ```
 
-**Using class component**
+`index.html`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Reactaz</title>
+  </head>
+  <body>
+  
+    <div id="root"></div>
+	
+  </body>
+</html>
+```
+
+`app.js`
 ```jsx
 import ReactDOM from 'react-dom';
 import MyComponent from './MyComponent';
 
-<div id="container">
-</div>
-
-let containerDiv = document.getElementById('content');
-ReactDOM.render(<MyComponent name="Hassan" />, containerDiv);
+ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('root'));
 ```
 
 **Using class component in other component** 
