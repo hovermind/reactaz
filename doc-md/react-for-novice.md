@@ -25,10 +25,9 @@ import React from 'react';
 
 class MyComponent extends React.Component {
   // ... ... ..
-  // ES6 destructing : const {name} = this.props;
   render() {
     return (
-      <h1> Hello {this.props.name}! </h1>  // <h1> Hello {name}! </h1>
+      <h1> Hello {this.props.name}! </h1>
     );
   }
 }
@@ -36,21 +35,24 @@ class MyComponent extends React.Component {
 export default MyComponent;
 ```
 
-Using class component
+**Using class component**
 ```jsx
+import ReactDOM from 'react-dom';
+
 <div id="container">
 </div>
 
-ReactDOM.render(<MyComponent name="Hassan" />, document.getElementById('content'));
+let containerDiv = document.getElementById('content');
+ReactDOM.render(<MyComponent name="Hassan" />, containerDiv);
 ```
 
 Using class component in other component: 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
 import MyComponent from './MyComponent';
 
-class MyOtherComponent extends Component {
-
+class MyOtherComponent extends React.Component {
+  // ... ... ...
   render() {
     return (
       <div>
@@ -69,21 +71,22 @@ export default MyOtherComponent;
 * get: `this.state`
 * normally `setState()` will be called from event handler function or lifecycle callbacks
 
-**Passing object:** performs a shallow merge of the state change into the new state
+**Set state - passing object:** performs a shallow merge of the state change into the new state
 ```jsx
 this.setState({foo: 2});
 ```
 
-**Passing updater and callback function:** 
+**Set state - passing updater and callback function:**
+Updater function signature: `(prevState, props) => stateChange`
 ```jsx
-// updater function signature: (prevState, props) => stateChange
-// componentDidUpdate lifecycle callback should be used instead of optional callback of setState (most cases)
-
+// inside event handler or lifecycle callback
 this.setState((prevState, props) => {
   return {counter: prevState.counter + props.step};
 });
 ```
-**Note:** *Due to the async nature of `setState()`, it is not advisable to use `this.state` to get the previous state within `setState()`, use `prevState` to get previous state*
+**Note:** 
+* due to the async nature of `setState()`, it is not advisable to use `this.state` to get the previous state within `setState()`, use `prevState` to get previous state
+* `componentDidUpdate()` lifecycle callback should be used instead of optional callback of `setState()` (in most cases)
 
 ## Functional Component
 * a function which accepts props and returns a React element
