@@ -77,7 +77,7 @@ export default MyOtherComponent;
 this.setState({foo: 2});
 ```
 
-**Set state - passing updater and callback function:**
+**Set state - passing updater and callback function:**   
 Updater function signature: `(prevState, props) => stateChange`
 ```jsx
 // inside event handler or lifecycle callback
@@ -109,7 +109,7 @@ const myComponent(props) {
 
 // ES6 arrow function
 const myComponent = (props) => {
-  let greeting = `Hello { props.name }!`; // interplated string
+  let greeting = `Hello { props.name }!`; // interpolated string
   return (
     <h1> { greeting } </h1>
   )
