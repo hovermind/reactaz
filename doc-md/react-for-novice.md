@@ -38,6 +38,7 @@ export default MyComponent;
 **Using class component**
 ```jsx
 import ReactDOM from 'react-dom';
+import MyComponent from './MyComponent';
 
 <div id="container">
 </div>
@@ -46,7 +47,7 @@ let containerDiv = document.getElementById('content');
 ReactDOM.render(<MyComponent name="Hassan" />, containerDiv);
 ```
 
-Using class component in other component: 
+**Using class component in other component** 
 ```jsx
 import React from 'react';
 import MyComponent from './MyComponent';
