@@ -6,6 +6,7 @@
 
 ## Traspiling on the fly 
 * We can use babel to transpile react app without using react CLI
+* need: @babel/standalone (https://unpkg.com/@babel/standalone)
 * slowly compiles JSX with Babel in the browser and uses a large development build of React.
 ```html
 <!DOCTYPE html>
