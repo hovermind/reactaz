@@ -3,6 +3,7 @@
 * JSX needs to be transpiled
 * babel tranpiles JSX
 * react app need to be transpiled before running
+* It slowly compiles JSX with Babel in the browser and uses a large development build of React.
 
 ## Traspiling on the fly 
 We can use babel to transpile react app without using react CLI
