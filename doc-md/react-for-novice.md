@@ -26,10 +26,26 @@ Courtesy: [Master these five concepts, then master React](https://www.freecodeca
 import React from 'react';
 
 class MyComponent extends React.Component {
-  // ... ... ..
+
+  constructor(props){
+    super(props);
+    
+    // set state here (state => ES6 property)
+    this.state = {counter: 0};
+  }
+  
+  onClickBtn(e){
+    setState((prevState) => {
+      this.state.counter = prevState + 1;
+    });
+  }
+  
   render() {
     return (
-      <h1> Hello {this.props.name}! </h1>
+      <div>
+        <h1> Hello {this.props.name}! </h1>
+	<button type="button" onClick="{this.onClickBtn}">Click Me</button><span>you clicked: this.state.counter</span>
+      </div>
     );
   }
 }
